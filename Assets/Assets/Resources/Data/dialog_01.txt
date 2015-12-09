@@ -1,0 +1,993 @@
+{
+	"broadcasterNodes": [
+		{
+			"id": "B1",
+			"messages": [
+				{
+					"delay": 5,
+					"text": "PLEASE ENTER THE CODE..."
+				},
+				{
+					"delay": 3,
+					"text": "PLEASE ENTER THE CODE..."
+				},
+				{
+					"delay": 3,
+					"text": "PLEASE ENTER THE CODE..."
+				}
+			],
+			"responses": ["S1.1","S1.2","S1.3","S1.4"]
+		},
+		{
+			"id": "B2",
+			"messages": [
+				{
+					"delay": 2,
+					"text": "Thank you. System secured."
+				},
+				{
+					"delay": 1,
+					"text": "\tTime Remaining:"
+				},
+				{
+					"delay": 1,
+					"text": "\t\tt-minus 23h 59m 59s"
+				},
+				{
+					"delay": 6,
+					"text": " "
+				},
+				{
+					"delay": 1,
+					"text": "Hello?"
+				},
+				{
+					"delay": 4,
+					"text": "This says it's going through, hello?"
+				},
+				{
+					"delay": 4,
+					"text": "Is anyone there, please??"
+				},
+				{
+					"delay": 6,
+					"text": "Hello? Please oh God let someone be there!"
+				}
+			],
+			"responses": ["S2.1","S2.2","S2.3"]
+		},
+		{
+			"id": "B3",
+			"messages": [
+				{
+					"delay": 2,
+					"text": "Oh thank god, the lord the heavens"
+				},
+				{
+					"delay": 2,
+					"text": "Thank the blessed green earth and its soil"
+				},
+				{
+					"delay": 1.5,
+					"text": "Thank everything!"
+				}
+			],
+			"responses": ["S3.1","S3.2","S3.3"]
+		},
+		{
+			"id": "B4",
+			"messages": [
+				{
+					"delay": 4,
+					"text": "Please...."
+				},
+				{
+					"delay": 3,
+					"text": "Please don't be dead, not now..."
+				}
+			],
+			"responses": ["S4.1","S4.2","S4.3"]
+		},
+		{
+			"id": "B5",
+			"messages": [
+				{
+					"delay": 3,
+					"text": "We've been looking for you!"
+				},
+				{
+					"delay": 3,
+					"text": "After all these years, we've done it--we've found you!"
+				},
+				{
+					"delay": 3,
+					"text": "Your mother--your father, they've been worried sick ever since"
+				},
+				{
+					"delay": 1,
+					"text": "Well, ever since, you know..."
+				}
+			],
+			"responses": ["S5.1","S5.2"]
+		},
+		{
+			"id": "B6",
+			"messages": [
+				{
+					"delay": 3,
+					"text": "The mainframe! I was able to reach you through the mainframe haha!"
+				},
+				{
+					"delay": 2,
+					"text": "Who'd have that it would still be connected after all these years, amazing"
+				},
+				{
+					"delay": 2,
+					"text": "They told me I was kicking a dead horse, but they're the one's who're shrouded."
+				},
+				{
+					"delay": 2,
+					"text": "`Ol Plato really broke free from these chains haha, and the light ain't too bright after all."
+				}
+			],
+			"responses": ["S6.1"]
+		},
+		{
+			"id": "B7",
+			"messages": [
+				{
+					"delay": 3,
+					"text": "Nevermind, I guess what's important is that you're alive"
+				},
+				{
+					"delay": 2,
+					"text": "I'm just so happy, don't you see?"
+				},
+				{
+					"delay": 2,
+					"text": "We were lost without you, and now you are found."
+				},
+				{
+					"delay": 3,
+					"text": "Tell me, do you have enough air in there? What about food? Is it moldy, rusty?"
+				},
+				{
+					"delay": 2.8,
+					"text": "Do all of the electronics work?"
+				}
+			],
+			"responses": ["S7.1","S7.2","S7.3"]
+		},
+		{
+			"id": "B8",
+			"messages": [
+				{
+					"delay": 2,
+					"text": "Yes, yes! Absolutely"
+				},
+				{
+					"delay": 3,
+					"text": "Oh hey, tell me, do you have enough air in there? What about food? Is it moldy, rusty?"
+				},
+				{
+					"delay": 3,
+					"text": "Do all of the electronics work?"
+				}
+			],
+			"responses": ["S8.1","S8.2","S8.3"]
+		},
+		{
+			"id": "B9",
+			"messages": [
+				{
+					"delay": 2,
+					"text": "hey hey, I just want to get you out of there is all"
+				},
+				{
+					"delay": 2.5,
+					"text": "your parents, they want to see you."
+				},
+				{
+					"delay": 3,
+					"text": "My job is to get you out of there, so again can you please tell me"
+				},
+				{
+					"delay": 1.5,
+					"text": "do you feel anything?"
+				}
+			],
+			"responses": ["S9.1","S9.2"]
+		},
+		{
+			"id": "B10",
+			"messages": [
+				{
+					"delay": 4,
+					"text": "Excellent, excellent! Now tell me, do you feel anything?"
+				}
+			],
+			"responses": ["S10.1","S10.2"]
+		},
+		{
+			"id": "B11",
+			"messages": [
+				{
+					"delay": 7,
+					"text": "\t\t<<  The Next Day >>"
+				},
+				{
+					"delay": 3,
+					"text": "PLEASE ENTER THE CODE..."
+				},
+				{
+					"delay": 3,
+					"text": "PLEASE ENTER THE CODE..."
+				},
+				{
+					"delay": 3,
+					"text": "PLEASE ENTER THE CODE..."
+				}
+			],
+			"responses": ["S11.1","S11.2","S11.3","S11.4"]
+		},
+		{
+			"id": "B12",
+			"messages": [
+				{
+					"delay": 3,
+					"text": "Thank you. System secured."
+				},
+				{
+					"delay": 2,
+					"text": "\tTime Remaining:"
+				},
+				{
+					"delay": 2,
+					"text": "\t\tt-minus 23h 59m 59s"
+				},
+				{
+					"delay": 5,
+					"text": "Hey, respond when you see this please!"
+				}
+			],
+			"responses": ["S12.1","S12.2","S12.3"]
+		},
+		{
+			"id": "B13",
+			"messages": [
+				{
+					"delay": 2,
+					"text": "We found an air pocket, we wanted to be sure it was you!"
+				},
+				{
+					"delay": 5,
+					"text": "We've been poking and prodding, releasing a mild sedative so as not to disturb anything too much hahahaha"
+				},
+				{
+					"delay": 2,
+					"text": "Looks like we got our eyes on you"
+				}
+			],
+			"responses": ["S13.1"]
+		},
+		{
+			"id": "B14",
+			"messages": [
+				{
+					"delay": 3.5,
+					"text": "I sure hope not, many people would be very disappointed"
+				}
+			],
+			"responses": ["S14.1"]
+		},
+		{
+			"id": "B15",
+			"messages": [
+				{
+					"delay": 2.8,
+					"text": "Yeah sure, what's up?"
+				}
+			],
+			"responses": ["S15.1","S15.2","S15.3"]
+		},
+		{
+			"id": "B16",
+			"messages": [
+				{
+					"delay": 2.8,
+					"text": "oh, well it's magnificent out here"
+				},
+				{
+					"delay": 3.6,
+					"text": "There are bright orange skies as far as the eyes can see"
+				},
+				{
+					"delay": 2,
+					"text": "Trees lined upon mountain tops litter the sky"
+				},
+				{
+					"delay": 4.5,
+					"text": "In the evening, you hear the dodos and hoohoos ring across the starry expanse"
+				}
+			],
+			"responses": ["S16.1","S16.2","S16.3"]
+		},
+		{
+			"id": "B17",
+			"messages": [
+				{
+					"delay": 2.8,
+					"text": "Yes, they're worried sick. Do you remember how you got down there?"
+				},
+				{
+					"delay": 2,
+					"text": "I suppose you could've been born there for all I know."
+				},
+				{
+					"delay": 1.5,
+					"text": "I don't know much, I just know they've wanted to find you for a long long time"
+				}
+			],
+			"responses": ["S17.1","S17.2"]
+		},
+		{
+			"id": "B18",
+			"messages": [
+				{
+					"delay": 2.8,
+					"text": "The code?"
+				},
+				{
+					"delay": 5,
+					"text": "Hmmm, no no, I don't know what you could mean"
+				}
+			],
+			"responses": ["S18.1"]
+		},
+		{
+			"id": "B19",
+			"messages": [
+				{
+					"delay": 4,
+					"text": "Why every week I see it! It comes shining through the horizon like pale red glow of magnificence. I can't wait until you see it"
+				}
+			],
+			"responses": ["S19.1","S19.2","S19.3"]
+		},
+		{
+			"id": "B20",
+			"messages": [
+				{
+					"delay": 3,
+					"text": "Ah yes, it's quite beautiful."
+				},
+				{
+					"delay": 3,
+					"text": "You see, the sun is bright red of course and it paints the sky"
+				},
+				{
+					"delay": 1,
+					"text": "orange, because of the light refracting."
+				},
+				{
+					"delay": 4,
+					"text": "you just really have to, uh, see"
+				}
+			],
+			"responses": ["S20.1","S20.2","S20.3"]
+		},
+		{
+			"id": "B21",
+			"messages": [
+				{
+					"delay": 3,
+					"text": "Magnificent flying beasts with eyes and a neck that cock to and fro."
+				},
+				{
+					"delay": 2,
+					"text": "In the old world there were hundreds of thousands littering the sky I'm told."
+				},
+				{
+					"delay": 2,
+					"text": "Now they've dwindled a bit.."
+				}
+			],
+			"responses": ["S21.1","S21.2","S21.3"]
+		},
+		{
+			"id": "B22",
+			"messages": [
+				{
+					"delay": 2,
+					"text": "Well they sure do remember and miss you!"
+				},
+				{
+					"delay": 2,
+					"text": "Hang on.."
+				},
+				{
+					"delay": 5,
+					"text": "I'm getting some sort of interference or obstruction..."
+				},
+				{
+					"delay": 2,
+					"text": "there's a lot of metal..."
+				},
+				{
+					"delay": 2,
+					"text": "so much, my god."
+				},
+				{
+					"delay": 4,
+					"text": "oh my god, we're here. We've actually found it!"
+				},
+				{
+					"delay": 1,
+					"text": "This is amazing!"
+				},
+				{
+					"delay": 5,
+					"text": "hey kid, look we're almost to you. It seems we need some sort of code to rescue: something that was put in when the security was needed."
+				}
+			],
+			"responses": ["S22.1","S22.2","S22.3"]
+		},
+		{
+			"id": "B23",
+			"messages": [
+				{
+					"delay": 2,
+					"text": "Hang on.."
+				},
+				{
+					"delay": 5,
+					"text": "I'm getting some sort of interference or obstruction..."
+				},
+				{
+					"delay": 2,
+					"text": "there's a lot of metal..."
+				},
+				{
+					"delay": 2,
+					"text": "so much, my god."
+				},
+				{
+					"delay": 4,
+					"text": "oh my god, we're here. We've actually found it!"
+				},
+				{
+					"delay": 1,
+					"text": "This is amazing!"
+				},
+				{
+					"delay": 5,
+					"text": "hey kid, look we're almost to you. It seems we need some sort of code to rescue: something that was put in when the security was needed."
+				}
+			],
+			"responses": ["S23.1","S23.2","S23.3"]
+		},
+		{
+			"id": "B24",
+			"messages": [
+				{
+					"delay": 3,
+					"text": "hahaha, excellent kiddo."
+				},
+				{
+					"delay": 4,
+					"text": "You served your part well"
+				}
+			],
+			"responses": ["S24.1","S24.2","S24.3"]
+		},
+		{
+			"id": "B25",
+			"messages": [
+				{
+					"delay": 1.2,
+					"text": "The code, the goddamn code!"
+				},
+				{
+					"delay": 2,
+					"text": "Look, we got readings this thing ain't gonna hold for much longer"
+				},
+				{
+					"delay": 2,
+					"text": "we want to get you out of there as soon as possible!"
+				}
+			],
+			"responses": ["S25.1","S25.2"]
+		},
+		{
+			"id": "B26",
+			"messages": [
+				{
+					"delay": 3,
+					"text": "goddamnit."
+				},
+				{
+					"delay": 5,
+					"text": "listen kid, you're in a world of trouble if we can't get this door open"
+				},
+				{
+					"delay": 2.8,
+					"text": "think long and think hard about what you're going to say next, got it?"
+				},
+				{
+					"delay": 0.8,
+					"text": "what"
+				},
+				{
+					"delay": 0.8,
+					"text": "is"
+				},
+				{
+					"delay": 0.8,
+					"text": "the"
+				},
+				{
+					"delay": 0.8,
+					"text": "code"
+				},
+				{
+					"delay": 4,
+					"text": "code"
+				}
+			],
+			"responses": ["S26.1"]
+		},
+		{
+			"id": "B27",
+			"messages": [
+				{
+					"delay": 2,
+					"text": "You brought honor to us all, kid"
+				},
+				{
+					"delay": 2,
+					"text": "You're goddamn Plato bringing light into the cave"
+				},
+				{
+					"delay": 2.8,
+					"text": "Only now it won't burn so much"
+				},
+				{
+					"delay": 1.5,
+					"text": "ain't that worth something"
+				},
+				{
+					"delay": 1,
+					"text": "heh"
+				}
+			],
+			"responses": []
+		},
+		{
+			"id": "B28",
+			"messages": [
+				{
+					"delay": 2,
+					"text": "There's no time for this bullshit"
+				},
+				{
+					"delay": 5,
+					"text": "listen kid, you're in a world of trouble if we can't get this door open"
+				},
+				{
+					"delay": 2.8,
+					"text": "The readings are off the chart, we need to come in now"
+				},
+				{
+					"delay": 2,
+					"text": "think long and think hard about what you're going to say next, got it?"
+				},
+				{
+					"delay": 1,
+					"text": "What"
+				},
+				{
+					"delay": 1,
+					"text": "is"
+				},
+				{
+					"delay": 1,
+					"text": "the"
+				},
+				{
+					"delay": 1,
+					"text": "code"
+				}
+			],
+			"responses": ["S28.1"]
+		}
+	],
+	
+	
+	"subscriberNodes": [
+		{
+			"id": "S1.1",
+			"nodeToActivate": "B2",
+			"text": "4-8-15-16-23-42"
+		},
+		{
+			"id": "S1.2",
+			"nodeToActivate": "B2",
+			"text": "4-8-15-16-23-42"
+		},
+		{
+			"id": "S1.3",
+			"nodeToActivate": "B2",
+			"text": "4-8-15-16-23-42"
+		},
+				{
+			"id": "S1.4",
+			"nodeToActivate": "B2",
+			"text": "4-8-15-16-23-42"
+		},
+		
+		
+		
+		{
+			"id": "S2.1",
+			"nodeToActivate": "B3",
+			"text": "hello?"
+		},
+		{
+			"id": "S2.2",
+			"nodeToActivate": "B3",
+			"text": "yes yes i'm here. hello?"
+		},
+		{
+			"id": "S2.3",
+			"nodeToActivate": "B4",
+			"text": "-do nothing-"
+		},
+		
+		
+		{
+			"id": "S3.1",
+			"nodeToActivate": "B5",
+			"text": "what are you talking about? "
+		},
+		{
+			"id": "S3.2",
+			"nodeToActivate": "B5",
+			"text": "who are you?"
+		},
+		{
+			"id": "S3.3",
+			"nodeToActivate": "B6",
+			"text": "how are you talking to me?"
+		},
+		
+		
+		
+		{
+			"id": "S4.1",
+			"nodeToActivate": "B3",
+			"text": "ok ok i'm here. what is happening?"
+		},
+		{
+			"id": "S4.2",
+			"nodeToActivate": "B3",
+			"text": "hahahahah fooled you lol xp"
+		},
+		{
+			"id": "S4.3",
+			"nodeToActivate": "B3",
+			"text": "sorry, bathroom break"
+		},
+		
+		
+		
+		{
+			"id": "S5.1",
+			"nodeToActivate": "B7",
+			"text": "since what?"
+		},
+		{
+			"id": "S5.2",
+			"nodeToActivate": "B8",
+			"text": "i can't believe it. really?"
+		},
+		
+		
+		{
+			"id": "S6.1",
+			"nodeToActivate": "B7",
+			"text": "… what are you talking about?"
+		},
+		
+		
+		{
+			"id": "S7.1",
+			"nodeToActivate": "B9",
+			"text": "why do you want to know?"
+		},
+		{
+			"id": "S7.2",
+			"nodeToActivate": "B10",
+			"text": "yeah, i think"
+		},
+		{
+			"id": "S7.3",
+			"nodeToActivate": "B10",
+			"text": "i heard rumbling a few minutes ago"
+		},
+		
+		
+		{
+			"id": "S8.1",
+			"nodeToActivate": "B9",
+			"text": "why do you want to know?"
+		},
+		{
+			"id": "S8.2",
+			"nodeToActivate": "B10",
+			"text": "yeah, i think"
+		},
+		{
+			"id": "S8.3",
+			"nodeToActivate": "B10",
+			"text": "i heard rumbling a few minutes ago"
+		},
+		
+		
+		{
+			"id": "S9.1",
+			"nodeToActivate": "B11",
+			"text": "yeah... sleepy"
+		},
+		{
+			"id": "S9.2",
+			"nodeToActivate": "B11",
+			"text": "what's... going... on"
+		},
+		
+		
+		{
+			"id": "S10.1",
+			"nodeToActivate": "B11",
+			"text": "yeah... sleepy"
+		},
+		{
+			"id": "S10.2",
+			"nodeToActivate": "B11",
+			"text": "what's... going... on"
+		},
+		
+		
+		{
+			"id": "S11.1",
+			"nodeToActivate": "B12",
+			"text": "4-8-15-16-23-42"
+		},
+		{
+			"id": "S11.2",
+			"nodeToActivate": "B12",
+			"text": "4-8-15-16-23-42"
+		},
+		{
+			"id": "S11.3",
+			"nodeToActivate": "B12",
+			"text": "4-8-15-16-23-42"
+		},
+		{
+			"id": "S11.4",
+			"nodeToActivate": "B12",
+			"text": "4-8-15-16-23-42"
+		},
+		
+		
+		{
+			"id": "S12.1",
+			"nodeToActivate": "B13",
+			"text": "what the hell happened?"
+		},
+		{
+			"id": "S12.2",
+			"nodeToActivate": "B13",
+			"text": "what did you do?"
+		},
+		{
+			"id": "S12.3",
+			"nodeToActivate": "B14",
+			"text": "am i dead?"
+		},
+		
+		
+		{
+			"id": "S13.1",
+			"nodeToActivate": "B15",
+			"text": "hey, i've got a question"
+		},
+		
+		
+		{
+			"id": "S14.1",
+			"nodeToActivate": "B15",
+			"text": "hey, i've got a question"
+		},
+		
+		
+		{
+			"id": "S15.1",
+			"nodeToActivate": "B16",
+			"text": "-ask about outside world-"
+		},
+		{
+			"id": "S15.2",
+			"nodeToActivate": "B17",
+			"text": "-ask about parents-"
+		},
+		{
+			"id": "S15.3",
+			"nodeToActivate": "B18",
+			"text": "-ask about the code-"
+		},
+		
+		
+		{
+			"id": "S16.1",
+			"nodeToActivate": "B19",
+			"text": "so.. you've seen the sun?"
+		},
+		{
+			"id": "S16.2",
+			"nodeToActivate": "B20",
+			"text": "orange skies?"
+		},
+		{
+			"id": "S16.3",
+			"nodeToActivate": "B21",
+			"text": "the hoohoos?"
+		},
+		
+		
+		{
+			"id": "S17.1",
+			"nodeToActivate": "B22",
+			"text": "i don't remember"
+		},
+		{
+			"id": "S17.2",
+			"nodeToActivate": "B22",
+			"text": "i miss them"
+		},
+		
+		
+		{
+			"id": "S18.1",
+			"nodeToActivate": "B23",
+			"text": "the code. what i enter every day"
+		},
+		
+		
+		{
+			"id": "S19.1",
+			"nodeToActivate": "B23",
+			"text": "me either"
+		},
+		{
+			"id": "S19.2",
+			"nodeToActivate": "B23",
+			"text": "wow"
+		},
+		{
+			"id": "S19.3",
+			"nodeToActivate": "B23",
+			"text": "i can't imagine"
+		},
+		
+		
+		{
+			"id": "S20.1",
+			"nodeToActivate": "B23",
+			"text": "i can't wait"
+		},
+		{
+			"id": "S20.2",
+			"nodeToActivate": "B23",
+			"text": "when can you get me out?"
+		},
+		{
+			"id": "S20.3",
+			"nodeToActivate": "B23",
+			"text": "something seems off.. "
+		},
+		
+		
+		{
+			"id": "S21.1",
+			"nodeToActivate": "B23",
+			"text": "old world?"
+		},
+		{
+			"id": "S21.2",
+			"nodeToActivate": "B23",
+			"text": "oh, you mean they're birds?"
+		},
+		{
+			"id": "S21.3",
+			"nodeToActivate": "B23",
+			"text": "wow, hundreds of thousands..."
+		},
+		
+		
+		{
+			"id": "S22.1",
+			"nodeToActivate": "B24",
+			"text": "yeah, 4-8-15-16-23-42"
+		},
+		{
+			"id": "S22.2",
+			"nodeToActivate": "B25",
+			"text": "i'm not so sure i should do that"
+		},
+		{
+			"id": "S22.3",
+			"nodeToActivate": "B26",
+			"text": "i don't know any code"
+		},
+		
+		
+		{
+			"id": "S23.1",
+			"nodeToActivate": "B24",
+			"text": "yeah, 4-8-15-16-23-42"
+		},
+		{
+			"id": "S23.2",
+			"nodeToActivate": "B25",
+			"text": "i'm not so sure i should do that"
+		},
+		{
+			"id": "S23.3",
+			"nodeToActivate": "B26",
+			"text": "i don't know any code"
+		},
+		
+		
+		{
+			"id": "S24.1",
+			"nodeToActivate": "B27",
+			"text": "i'm not sure what you mean"
+		},
+		{
+			"id": "S24.2",
+			"nodeToActivate": "B27",
+			"text": "huh?"
+		},
+		{
+			"id": "S24.3",
+			"nodeToActivate": "B27",
+			"text": "thank you!"
+		},
+		
+		
+		{
+			"id": "S25.1",
+			"nodeToActivate": "B24",
+			"text": "4-8-15-16-23-42"
+		},
+		{
+			"id": "S25.2",
+			"nodeToActivate": "B28",
+			"text": "who are you, again?"
+		},
+		
+		
+		{
+			"id": "S26.1",
+			"nodeToActivate": "B24",
+			"text": "4-8-15-16-23-42"
+		},
+		
+		
+		{
+			"id": "S28.1",
+			"nodeToActivate": "B24",
+			"text": "4-8-15-16-23-42"
+		}
+	]
+}

@@ -1,0 +1,117 @@
+{
+	"broadcasterNodes": [
+		{
+			"id": "B1",
+			"messages": [
+				{
+					"delay": 1,
+					"text": "Hi, how are you today?"
+				}
+			],
+			"responses": ["S1.1","S1.2"]
+		},
+		{
+			"id": "B2",
+			"messages": [
+				{
+					"delay": 1,
+					"text": "That's 'good' to hear haha."
+				}
+			],
+			"responses": ["S2.1", "S2.2"]
+		},
+		{
+			"id": "B3",
+			"messages": [
+				{
+					"delay": 1,
+					"text": "That's too 'bad', heh."
+				}
+			]
+			"responses": ["S3.1", "S3.2"]
+		},
+		{
+			"id": "B4",
+			"messages": [
+				{
+					"delay": 2,
+					"text": "That's not nice to say!"
+				},
+				{
+					"delay": 2,
+					"text": "You're a mean person"
+				},
+				{
+					"delay": 2,
+					"text": "I don't like you"
+				}
+			]
+		},
+		{
+			"id": "B5",
+			"messages": [
+				{
+					"delay": 1,
+					"text": "Thanks! That's nice of you to say"
+				},
+				{
+					"delay": 1.4,
+					"text": "You're a pretty cool person"
+				}
+			]
+		},
+		{
+			"id": "B6",
+			"messages": [
+				{
+					"delay": 1,
+					"text": "Oh no, I'm sorry to see you so sad"
+				},
+				{
+					"delay": 0.8,
+					"text": ":["
+				}
+			]
+		},
+	],
+	
+	
+	"subscriberNodes": [
+		{
+			"id": "S1.1",
+			"nodeToActivate": "B2",
+			"text": "good"
+		},
+		{
+			"id": "S1.2",
+			"nodeToActivate": "B3",
+			"text": "bad"
+		},
+		
+		
+		
+		{
+			"id": "S2.1",
+			"nodeToActivate": "B4",
+			"text": "I hate you"
+		},
+				{
+			"id": "S2.2",
+			"nodeToActivate": "B5",
+			"text": "haha you're funny!"
+		},
+		
+		
+		
+		{
+			"id": "S3.1",
+			"nodeToActivate": "B4",
+			"text": "wow you are annoying"
+		},
+		{
+			"id": "S3.2",
+			"nodeToActivate": "B6",
+			"text": "yeah... :("
+		}
+	]
+}
