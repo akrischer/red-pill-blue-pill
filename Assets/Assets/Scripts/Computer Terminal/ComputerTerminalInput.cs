@@ -76,27 +76,36 @@ public class ComputerTerminalInput : AbstractTerminal {
 	
 	// Update is called once per frame
 	void Update () {
+        if (text.text == "")
+        {
+            text.text += " ";
+        }
+        int lastIndex = text.text.Length - 1;
+        if (blinkingCharIdx >= 0 && text.text[lastIndex] == ' ' || text.text[lastIndex] == blinkCharacter)
+        {
+            blinkingCharIdx = lastIndex;
+        }
         // Every so often, toggle blinkinkChar from ' ' and the specified blink character.
-        if (Time.time - m_TimeStamp >= 0.5 && !isDrawing)
+        if (Time.time - m_TimeStamp >= 0.5 && !isDrawing && blinkingCharIdx >= 0)
         {
             m_TimeStamp = Time.time;
-            if (blinkingCharIdx >= text.text.Length)
+            if (text.text.Length > blinkingCharIdx)
             {
-                Debug.LogWarning("blinking character index >= accessed string's length!");
+                if (text.text[blinkingCharIdx] == blinkCharacter)
+                {
+                    char[] newText = text.text.ToCharArray();
+                    newText[blinkingCharIdx] = ' ';
+                    text.text = new string(newText);
+
+                }
+                else
+                {
+                    char[] newText = text.text.ToCharArray();
+                    newText[blinkingCharIdx] = blinkCharacter;
+                    text.text = new string(newText);
+                }
             }
-            if (text.text[blinkingCharIdx] == blinkCharacter)
-            {
-                char[] newText = text.text.ToCharArray();
-                newText[blinkingCharIdx] = ' ';
-                text.text = new string(newText);
-                
-            }
-            else
-            {
-                char[] newText = text.text.ToCharArray();
-                newText[blinkingCharIdx] = blinkCharacter;
-                text.text = new string(newText);
-            }
+
         }
 
         if (Input.GetKeyDown(KeyCode.RightArrow) && testTextRendering)
@@ -208,7 +217,7 @@ public class ComputerTerminalInput : AbstractTerminal {
         textAfterDrawing = text.text;
     }
 
-    private void RepositionBlinkingChar()
+    internal void RepositionBlinkingChar()
     {
         blinkingCharIdx = text.text.Length;
         text.text += " ";

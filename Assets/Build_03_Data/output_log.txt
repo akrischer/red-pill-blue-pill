@@ -2,12 +2,12 @@ Mono path[0] = 'C:/Users/Andrew/Documents/red-pill-blue-pill/Assets/Build_03_Dat
 Mono path[1] = 'C:/Users/Andrew/Documents/red-pill-blue-pill/Assets/Build_03_Data/Mono'
 Mono config path = 'C:/Users/Andrew/Documents/red-pill-blue-pill/Assets/Build_03_Data/Mono/etc'
 PlayerConnection initialized from C:/Users/Andrew/Documents/red-pill-blue-pill/Assets/Build_03_Data (debug = 0)
-PlayerConnection initialized network socket : 0.0.0.0 55252
-Multi-casting "[IP] 192.168.1.166 [Port] 55252 [Flags] 3 [Guid] 3485155539 [EditorId] 66474113 [Version] 1048832 [Id] WindowsPlayer(Andrew-PC) [Debug] 1" to [225.0.0.222:54997]...
-Waiting for connection from host on [192.168.1.166:55252]...
-PlayerConnection accepted from [192.168.56.1] handle:0x1c8
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,defer=y,address=0.0.0.0:56539
-PlayerConnection already initialized - listening to [192.168.1.166:55252]
+PlayerConnection initialized network socket : 0.0.0.0 55406
+Multi-casting "[IP] 192.168.1.166 [Port] 55406 [Flags] 3 [Guid] 580613841 [EditorId] 1101038541 [Version] 1048832 [Id] WindowsPlayer(Andrew-PC) [Debug] 1" to [225.0.0.222:54997]...
+Waiting for connection from host on [192.168.1.166:55406]...
+PlayerConnection accepted from [192.168.56.1] handle:0x1c4
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,defer=y,address=0.0.0.0:56841
+PlayerConnection already initialized - listening to [192.168.1.166:55406]
 Initialize engine version: 5.2.2f1 (3757309da7e7)
 GfxDevice: creating device client; threaded=1
 Direct3D:
@@ -27,12 +27,66 @@ Loading C:\Users\Andrew\Documents\red-pill-blue-pill\Assets\Build_03_Data\Manage
 Platform assembly: C:\Users\Andrew\Documents\red-pill-blue-pill\Assets\Build_03_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
 Loading C:\Users\Andrew\Documents\red-pill-blue-pill\Assets\Build_03_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
 Platform assembly: C:\Users\Andrew\Documents\red-pill-blue-pill\Assets\Build_03_Data\Managed\System.Core.dll (this message is harmless)
-- Completed reload, in  0.128 seconds
+- Completed reload, in  0.069 seconds
 desktop: 1600x900 60Hz; virtual: 2880x1024 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
 <RI> Initialized touch support.
 Platform assembly: C:\Users\Andrew\Documents\red-pill-blue-pill\Assets\Build_03_Data\Managed\System.dll (this message is harmless)
 Setting up 1 worker threads for Enlighten.
-  Thread -> id: fd4 -> priority: 1 
+  Thread -> id: 2094 -> priority: 1 
+Broadcaster node finished-- notifying subscribers
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+BroadcasterNode:NotifySubscribers(Object, EventArgs) (at C:\Users\Andrew\Documents\red-pill-blue-pill\Assets\Assets\Scripts\Dialog System\BroadcasterNode.cs:99)
+ComputerTerminal:OnFinishedDisplaying(EventArgs) (at C:\Users\Andrew\Documents\red-pill-blue-pill\Assets\Assets\Scripts\Computer Terminal\ComputerTerminal.cs:53)
+ComputerTerminal:DrawingEnded() (at C:\Users\Andrew\Documents\red-pill-blue-pill\Assets\Assets\Scripts\Computer Terminal\ComputerTerminal.cs:129)
+<DequeueAndAnimateText>c__Iterator0:MoveNext() (at C:\Users\Andrew\Documents\red-pill-blue-pill\Assets\Assets\Scripts\Computer Terminal\AbstractTerminal.cs:119)
+ 
+(Filename: C:/Users/Andrew/Documents/red-pill-blue-pill/Assets/Assets/Scripts/Dialog System/BroadcasterNode.cs Line: 99)
+
+Subscriber node with text '4-8-15-16-23-42' is activated
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+SubscriberNode:Activate(Object, EventArgs) (at C:\Users\Andrew\Documents\red-pill-blue-pill\Assets\Assets\Scripts\Dialog System\SubscriberNode.cs:24)
+BroadcasterNode:NotifySubscribers(Object, EventArgs) (at C:\Users\Andrew\Documents\red-pill-blue-pill\Assets\Assets\Scripts\Dialog System\BroadcasterNode.cs:105)
+ComputerTerminal:OnFinishedDisplaying(EventArgs) (at C:\Users\Andrew\Documents\red-pill-blue-pill\Assets\Assets\Scripts\Computer Terminal\ComputerTerminal.cs:53)
+ComputerTerminal:DrawingEnded() (at C:\Users\Andrew\Documents\red-pill-blue-pill\Assets\Assets\Scripts\Computer Terminal\ComputerTerminal.cs:129)
+<DequeueAndAnimateText>c__Iterator0:MoveNext() (at C:\Users\Andrew\Documents\red-pill-blue-pill\Assets\Assets\Scripts\Computer Terminal\AbstractTerminal.cs:119)
+ 
+(Filename: C:/Users/Andrew/Documents/red-pill-blue-pill/Assets/Assets/Scripts/Dialog System/SubscriberNode.cs Line: 24)
+
+Subscriber node with text '4-8-15-16-23-42' is activated
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+SubscriberNode:Activate(Object, EventArgs) (at C:\Users\Andrew\Documents\red-pill-blue-pill\Assets\Assets\Scripts\Dialog System\SubscriberNode.cs:24)
+BroadcasterNode:NotifySubscribers(Object, EventArgs) (at C:\Users\Andrew\Documents\red-pill-blue-pill\Assets\Assets\Scripts\Dialog System\BroadcasterNode.cs:105)
+ComputerTerminal:OnFinishedDisplaying(EventArgs) (at C:\Users\Andrew\Documents\red-pill-blue-pill\Assets\Assets\Scripts\Computer Terminal\ComputerTerminal.cs:53)
+ComputerTerminal:DrawingEnded() (at C:\Users\Andrew\Documents\red-pill-blue-pill\Assets\Assets\Scripts\Computer Terminal\ComputerTerminal.cs:129)
+<DequeueAndAnimateText>c__Iterator0:MoveNext() (at C:\Users\Andrew\Documents\red-pill-blue-pill\Assets\Assets\Scripts\Computer Terminal\AbstractTerminal.cs:119)
+ 
+(Filename: C:/Users/Andrew/Documents/red-pill-blue-pill/Assets/Assets/Scripts/Dialog System/SubscriberNode.cs Line: 24)
+
+Subscriber node with text '4-8-15-16-23-42' is activated
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+SubscriberNode:Activate(Object, EventArgs) (at C:\Users\Andrew\Documents\red-pill-blue-pill\Assets\Assets\Scripts\Dialog System\SubscriberNode.cs:24)
+BroadcasterNode:NotifySubscribers(Object, EventArgs) (at C:\Users\Andrew\Documents\red-pill-blue-pill\Assets\Assets\Scripts\Dialog System\BroadcasterNode.cs:105)
+ComputerTerminal:OnFinishedDisplaying(EventArgs) (at C:\Users\Andrew\Documents\red-pill-blue-pill\Assets\Assets\Scripts\Computer Terminal\ComputerTerminal.cs:53)
+ComputerTerminal:DrawingEnded() (at C:\Users\Andrew\Documents\red-pill-blue-pill\Assets\Assets\Scripts\Computer Terminal\ComputerTerminal.cs:129)
+<DequeueAndAnimateText>c__Iterator0:MoveNext() (at C:\Users\Andrew\Documents\red-pill-blue-pill\Assets\Assets\Scripts\Computer Terminal\AbstractTerminal.cs:119)
+ 
+(Filename: C:/Users/Andrew/Documents/red-pill-blue-pill/Assets/Assets/Scripts/Dialog System/SubscriberNode.cs Line: 24)
+
+Subscriber node with text '4-8-15-16-23-42' is activated
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+SubscriberNode:Activate(Object, EventArgs) (at C:\Users\Andrew\Documents\red-pill-blue-pill\Assets\Assets\Scripts\Dialog System\SubscriberNode.cs:24)
+BroadcasterNode:NotifySubscribers(Object, EventArgs) (at C:\Users\Andrew\Documents\red-pill-blue-pill\Assets\Assets\Scripts\Dialog System\BroadcasterNode.cs:105)
+ComputerTerminal:OnFinishedDisplaying(EventArgs) (at C:\Users\Andrew\Documents\red-pill-blue-pill\Assets\Assets\Scripts\Computer Terminal\ComputerTerminal.cs:53)
+ComputerTerminal:DrawingEnded() (at C:\Users\Andrew\Documents\red-pill-blue-pill\Assets\Assets\Scripts\Computer Terminal\ComputerTerminal.cs:129)
+<DequeueAndAnimateText>c__Iterator0:MoveNext() (at C:\Users\Andrew\Documents\red-pill-blue-pill\Assets\Assets\Scripts\Computer Terminal\AbstractTerminal.cs:119)
+ 
+(Filename: C:/Users/Andrew/Documents/red-pill-blue-pill/Assets/Assets/Scripts/Dialog System/SubscriberNode.cs Line: 24)
+
 Waiting for finish

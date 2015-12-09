@@ -63,7 +63,7 @@ public class UserChoicesUnderlay : MonoBehaviour {
             }
         }
         private static ComputerTerminalInput _computerTerminalInput;
-        private static ComputerTerminalInput computerTerminalInput
+        internal static ComputerTerminalInput computerTerminalInput
         {
             get
             {
@@ -95,7 +95,8 @@ public class UserChoicesUnderlay : MonoBehaviour {
         }
         public bool IsEmpty()
         {
-            return uiText.text == " " || sub == null;
+            // TODO: Instead of checking if "_", check against the set blinking char
+            return uiText.text == " " || uiText.text == "_" || sub == null;
         }
         public void SetSubscriber(SubscriberNode newSub)
         {
@@ -114,7 +115,7 @@ public class UserChoicesUnderlay : MonoBehaviour {
 
         public static void FlushInputTerminal()
         {
-            AbstractTerminal.StringToDraw std = new AbstractTerminal.StringToDraw(" ", 0.2f, false);
+            AbstractTerminal.StringToDraw std = new AbstractTerminal.StringToDraw(" ", 0.2f, true);
             computerTerminalInput.AcceptNodePackage(new Node.NodePackage(CurrentUserChoiceNode.sub, new List<AbstractTerminal.StringToDraw> { std }));
         }
 
@@ -155,7 +156,7 @@ public class UserChoicesUnderlay : MonoBehaviour {
             {
                 UserChoiceNode.OnUpDownArrowKey();
             }
-            if (Input.GetKeyDown(KeyCode.Return))
+            if (Input.GetKeyDown(KeyCode.Return) && !UserChoiceNode.CurrentUserChoiceNode.IsEmpty())
             {
                 SelectChoice(UserChoiceNode.CurrentUserChoiceNode);
             }
@@ -231,7 +232,9 @@ public class UserChoicesUnderlay : MonoBehaviour {
     {
         foreach(UserChoiceNode ucn in UserChoiceNode.choices)
         {
-            ucn.uiText.text = "";
+            ucn.uiText.text = " ";
+            ucn.sub = null;
         }
+        UserChoiceNode.computerTerminalInput.RepositionBlinkingChar();
     }
 }
