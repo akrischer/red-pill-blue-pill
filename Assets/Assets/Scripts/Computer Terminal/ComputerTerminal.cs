@@ -43,7 +43,7 @@ public class ComputerTerminal : AbstractTerminal {
 
     public void TestAcceptNodePackage(string str, float delay, bool atOnce)
     {
-        AcceptNodePackage(new Node.NodePackage(new SubscriberNode(), new List<StringToDraw> { new StringToDraw(str, delay, atOnce) }));
+        AcceptNodePackage(new TextNode.NodePackage(new SubscriberNode(), new List<StringToDraw> { new StringToDraw(str, delay, atOnce) }));
     }
 
     private void OnFinishedDisplaying(EventArgs e)

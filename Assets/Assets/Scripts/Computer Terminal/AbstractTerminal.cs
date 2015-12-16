@@ -11,7 +11,7 @@ public abstract class AbstractTerminal : MonoBehaviour {
 
     protected Text text;
     // A queue that holds strings to animate. Each will animate as soon as possible.
-    protected Queue<Node.NodePackage> toDisplay = new Queue<Node.NodePackage>();
+    protected Queue<TextNode.NodePackage> toDisplay = new Queue<TextNode.NodePackage>();
     protected bool isDrawing;
     protected Coroutine currentDrawingAnimation;
     protected string textAfterDrawing;
@@ -93,7 +93,7 @@ public abstract class AbstractTerminal : MonoBehaviour {
     /// </summary>
     /// <param name="str">String to draw</param>
     /// <param name="delay">Optional param, to specify delay before the message is written</param>
-    public void AcceptNodePackage(Node.NodePackage package, bool skipCurrent = false)
+    public void AcceptNodePackage(TextNode.NodePackage package, bool skipCurrent = false)
     {
         if (skipCurrent) { SkipCurrentSequence(); }
         toDisplay.Enqueue(package);
@@ -108,7 +108,7 @@ public abstract class AbstractTerminal : MonoBehaviour {
 
     protected virtual IEnumerator DequeueAndAnimateText()
     {
-        Node.NodePackage nodePackage = toDisplay.Dequeue();
+        TextNode.NodePackage nodePackage = toDisplay.Dequeue();
         foreach (StringToDraw std in nodePackage.messages)
         {
             LockDrawing();

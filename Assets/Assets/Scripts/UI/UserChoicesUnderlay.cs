@@ -109,14 +109,14 @@ public class UserChoicesUnderlay : MonoBehaviour {
             if (CurrentUserChoiceNode != null)
             {
                 AbstractTerminal.StringToDraw std = new AbstractTerminal.StringToDraw(CurrentUserChoiceNode.uiText.text, 0.2f, false);
-                computerTerminalInput.AcceptNodePackage(new Node.NodePackage(CurrentUserChoiceNode.sub, new List<AbstractTerminal.StringToDraw> { std }));
+                computerTerminalInput.AcceptNodePackage(new TextNode.NodePackage(CurrentUserChoiceNode.sub, new List<AbstractTerminal.StringToDraw> { std }));
             }
         }
 
         public static void FlushInputTerminal()
         {
             AbstractTerminal.StringToDraw std = new AbstractTerminal.StringToDraw(" ", 0.2f, true);
-            computerTerminalInput.AcceptNodePackage(new Node.NodePackage(CurrentUserChoiceNode.sub, new List<AbstractTerminal.StringToDraw> { std }));
+            computerTerminalInput.AcceptNodePackage(new TextNode.NodePackage(CurrentUserChoiceNode.sub, new List<AbstractTerminal.StringToDraw> { std }));
         }
 
 

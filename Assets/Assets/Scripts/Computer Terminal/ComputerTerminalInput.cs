@@ -111,7 +111,7 @@ public class ComputerTerminalInput : AbstractTerminal {
         if (Input.GetKeyDown(KeyCode.RightArrow) && testTextRendering)
         {
             SkipCurrentSequence();
-            AcceptNodePackage(new Node.NodePackage(new Node(), new List<StringToDraw> { new StringToDraw(TestCycleText.Next(), 0.4f, false) }));
+            AcceptNodePackage(new TextNode.NodePackage(new TextNode(), new List<StringToDraw> { new StringToDraw(TestCycleText.Next(), 0.4f, false) }));
         }
     }
 
@@ -135,7 +135,7 @@ public class ComputerTerminalInput : AbstractTerminal {
     /// <returns></returns>
     protected override IEnumerator DequeueAndAnimateText()
     {
-        Node.NodePackage nodePackage = toDisplay.Dequeue();
+        TextNode.NodePackage nodePackage = toDisplay.Dequeue();
         if (nodePackage.messages == null || nodePackage.messages.Count != 1)
         {
             Debug.LogWarning("Processed input node package; node package either null or message count != 1");

@@ -1,7 +1,12 @@
 {
-	"broadcasterNodes": [
+	"nodes": [
 		{
-			"id": "B1",
+			"id": "N0",
+			"activators": null
+		},
+		{
+			"id": "B0",
+			"activators": ["N0"],
 			"messages": [
 				{
 					"delay": 1,
@@ -11,7 +16,8 @@
 			"responses": ["S1.1","S1.2"]
 		},
 		{
-			"id": "B2",
+			"id": "B1",
+			"activators": ["S0"],
 			"messages": [
 				{
 					"delay": 1,
@@ -21,7 +27,8 @@
 			"responses": ["S2.1", "S2.2"]
 		},
 		{
-			"id": "B3",
+			"id": "B2",
+			"activators": ["S1"],
 			"messages": [
 				{
 					"delay": 1,
@@ -31,7 +38,8 @@
 			"responses": ["S3.1", "S3.2"]
 		},
 		{
-			"id": "B4",
+			"id": "B3",
+			"activators": ["S2", "S4"],
 			"messages": [
 				{
 					"delay": 2,
@@ -48,7 +56,8 @@
 			]
 		},
 		{
-			"id": "B5",
+			"id": "B4",
+			"activators": ["S3"],
 			"messages": [
 				{
 					"delay": 1,
@@ -61,7 +70,8 @@
 			]
 		},
 		{
-			"id": "B6",
+			"id": "B5",
+			"activators": ["S5"],
 			"messages": [
 				{
 					"delay": 1,
@@ -73,44 +83,34 @@
 				}
 			]
 		},
-	],
-	
-	
-	"subscriberNodes": [
 		{
-			"id": "S1.1",
-			"nodeToActivate": "B2",
+			"id": "S0",
+			"activators": ["B0"],
 			"text": "good"
 		},
 		{
-			"id": "S1.2",
-			"nodeToActivate": "B3",
+			"id": "S1",
+			"activators": ["B0"],
 			"text": "bad"
 		},
-		
-		
-		
 		{
-			"id": "S2.1",
-			"nodeToActivate": "B4",
+			"id": "S2",
+			"activators": ["B1"],
 			"text": "I hate you"
 		},
 				{
-			"id": "S2.2",
-			"nodeToActivate": "B5",
+			"id": "S3",
+			"activators": ["B1"],
 			"text": "haha you're funny!"
 		},
-		
-		
-		
 		{
-			"id": "S3.1",
-			"nodeToActivate": "B4",
+			"id": "S4",
+			"activators": ["B2"],
 			"text": "wow you are annoying"
 		},
 		{
-			"id": "S3.2",
-			"nodeToActivate": "B6",
+			"id": "S5",
+			"activators": ["B2"],
 			"text": "yeah... :("
 		}
 	]

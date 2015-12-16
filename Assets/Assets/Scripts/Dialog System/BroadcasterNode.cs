@@ -3,7 +3,7 @@ using System.Collections;
 using System;
 using System.Collections.Generic;
 
-public class BroadcasterNode : Node, IBroadcaster
+public class BroadcasterNode : TextNode, IBroadcaster
 {
     private EventHandler notifySubscribers;
 
@@ -55,9 +55,24 @@ public class BroadcasterNode : Node, IBroadcaster
         }
     }
 
+    #region ANode Methods
 
-    // 
-    internal void Activate(object sender, EventArgs e)
+    public override void Next()
+    {
+        FinishedDisplaying(this, EventArgs.Empty);
+    }
+
+    public override void AcceptDelegate(EventHandler eventHandler)
+    {
+        FinishedDisplaying += eventHandler;
+    }
+
+    public override void RemoveDelegate(EventHandler eventHandler)
+    {
+        FinishedDisplaying -= eventHandler;
+    }
+
+    public override void Activate(object sender, EventArgs e)
     {
         isActive = true;
         activatedTime = Time.time;
@@ -70,6 +85,8 @@ public class BroadcasterNode : Node, IBroadcaster
         // listen for finish    
         Utils.StaticStartCoroutine(FireTimePassedEvents());
     }
+
+    #endregion
 
     private IEnumerator FireTimePassedEvents()
     {

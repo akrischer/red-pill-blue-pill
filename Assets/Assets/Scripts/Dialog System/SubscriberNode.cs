@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System;
 
-public class SubscriberNode : Node, ISubscriber
+public class SubscriberNode : TextNode, ISubscriber
 {
     // This node listens for the subscriber to be finished
     internal BroadcasterNode listenFor;
@@ -15,14 +15,6 @@ public class SubscriberNode : Node, ISubscriber
     public override void HookupEvents()
     {
         listenFor.FinishedDisplaying += new EventHandler(Activate);
-    }
-
-    // TODO: IMPLEMENT!!!!!!!
-    public void Activate(object sender, EventArgs e)
-    {
-        // show options, blah blah...
-        Debug.Log("Subscriber node with text '" + text + "' is activated");
-        UserChoicesUnderlay.Instance.Accept(this);
     }
 
     public void OnSubscriberFinished(EventArgs e)
@@ -45,4 +37,28 @@ public class SubscriberNode : Node, ISubscriber
         UserChoicesUnderlay.FlushUserChoices();
         OnSubscriberFinished(EventArgs.Empty);
     }
+
+    public override void Next()
+    {
+        OnSubscriberFinished(EventArgs.Empty);
+    }
+
+    public override void AcceptDelegate(EventHandler eventHandler)
+    {
+        SubscriberFinished += eventHandler;
+    }
+
+    public override void RemoveDelegate(EventHandler eventHandler)
+    {
+        SubscriberFinished -= eventHandler;
+    }
+
+    public override void Activate(object sender, EventArgs e)
+    {
+        // show options, blah blah...
+        Debug.Log("Subscriber node with text '" + text + "' is activated");
+        UserChoicesUnderlay.Instance.Accept(this);
+    }
+
+
 }
