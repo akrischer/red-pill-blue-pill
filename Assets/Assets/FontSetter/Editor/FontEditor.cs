@@ -2394,7 +2394,7 @@ namespace hpjFonts {
 
 			packedFont.characterInfo = OutCharacterInfo;
 			EditorUtility.SetDirty( packedFont );
-			EditorApplication.SaveAssets();
+			AssetDatabase.SaveAssets();
 			AssetDatabase.Refresh();
 
 			packedFont.material.mainTexture = (Texture2D) AssetDatabase.LoadAssetAtPath( packedfontMapPath, typeof( Texture2D ) );
@@ -2483,7 +2483,7 @@ namespace hpjFonts {
 
 			packedFont.characterInfo = OutCharacterInfo;
 			EditorUtility.SetDirty( packedFont );
-			EditorApplication.SaveAssets();
+			AssetDatabase.SaveAssets();
 			AssetDatabase.Refresh();
 		}
 
